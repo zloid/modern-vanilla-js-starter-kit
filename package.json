@@ -1,0 +1,18 @@
+{
+  "name": "modern-vanilla-js-starter-kit",
+  "version": "0.0.1",
+  "description": "starter_kit",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zloid/modern-vanilla-JS-starter-kit.git"
+  },
+  "author": "idolz",
+  "license": "MIT",
+  "engines": {
+    "node": "v12.19.0"
+  }
+}
