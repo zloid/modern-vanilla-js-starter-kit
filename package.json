@@ -1,18 +1,55 @@
 {
-  "name": "modern-vanilla-js-starter-kit",
-  "version": "0.0.1",
-  "description": "starter_kit",
-  "main": "index.js",
-  "scripts": {
-    "test": "test"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/zloid/modern-vanilla-JS-starter-kit.git"
-  },
-  "author": "idolz",
-  "license": "MIT",
-  "engines": {
-    "node": "v12.19.0"
-  }
+    "name": "modern-vanilla-js-starter-kit",
+    "version": "0.1.0",
+    "description": "starter_kit",
+    "main": "index.js",
+    "scripts": {
+        "test": "jest",
+        "start": "webpack serve --mode development",
+        "build": "webpack",
+        "serve": "serve",
+        "doc": "jsdoc -c jsdoc-config.json",
+        "pretty": "prettier --write ."
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/zloid/modern-vanilla-JS-starter-kit.git"
+    },
+    "author": "idolz",
+    "license": "MIT",
+    "dependencies": {
+        "@reduxjs/toolkit": "^1.4.0",
+        "reefjs": "^7.4.2"
+    },
+    "devDependencies": {
+        "@babel/core": "^7.12.3",
+        "@babel/plugin-proposal-class-properties": "^7.12.1",
+        "@babel/preset-env": "^7.12.1",
+        "@testing-library/dom": "^7.26.3",
+        "@testing-library/jest-dom": "^5.11.5",
+        "babel-jest": "^26.6.1",
+        "babel-loader": "^8.1.0",
+        "bootstrap": "^4.5.3",
+        "clean-webpack-plugin": "^3.0.0",
+        "css-loader": "^5.0.0",
+        "docdash": "^1.2.0",
+        "html-webpack-plugin": "^4.5.0",
+        "husky": "^4.3.0",
+        "jest": "^26.6.1",
+        "jest-cli": "^26.6.1",
+        "jsdoc": "^3.6.6",
+        "mini-css-extract-plugin": "^1.2.1",
+        "prettier": "^2.1.2",
+        "purgecss": "^3.0.0",
+        "purgecss-webpack-plugin": "^3.0.0",
+        "serve": "^11.3.2",
+        "style-loader": "^2.0.0",
+        "webpack": "^5.3.2",
+        "webpack-cli": "^4.1.0",
+        "webpack-dev-server": "^3.11.0"
+    },
+    "engines": {
+        "node": "v12.19.0",
+        "npm": "v6.14.8"
+    }
 }
