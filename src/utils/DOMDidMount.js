@@ -7,7 +7,7 @@ import { keyboardEventListener } from './keyboardEventListener'
  * @function DOMDidMount
  * @returns {EventListener} EventListener which call all special scripts after DOMDidMount
  * @example
- * // keyboardEventListener(); calcFeaturesLogic()
+ * // keyboardEventListener()
  * DOMDidMount()
  */
 export const DOMDidMount = () =>

@@ -6,7 +6,7 @@
     },
     "recurseDepth": 10,
     "opts": {
-        "destination": "./docs-api/",
+        "destination": "./docs/",
         "recurse": true,
         "template": "node_modules/docdash"
     }
