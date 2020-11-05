@@ -16,6 +16,10 @@ body {
     -ms-user-select: none;
 }
 
+.disable-dbl-tap-zoom {
+    touch-action: manipulation;
+}
+
 .container {
     background: silver;
     padding: 10px 25px;

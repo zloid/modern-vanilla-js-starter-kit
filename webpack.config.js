@@ -11,6 +11,7 @@ const PATHS = {
 }
 
 module.exports = {
+    target: ["web", "es5"],
     entry: './src/index.js',
     output: {
         filename: 'bundle.js',

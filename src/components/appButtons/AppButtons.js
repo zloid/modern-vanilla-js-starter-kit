@@ -32,7 +32,9 @@ export const AppButtons = () => /* html */ `<div>
     <div class="row">
         <div class="col">
             <span class="badge badge-info">
-                Try Keyboard: +, -, Delete, Backspace
+                Try Keyboard:
+                <br />
+                +, -, Delete, Backspace
             </span>
         </div><!-- .col -->        
     </div><!-- .row -->
