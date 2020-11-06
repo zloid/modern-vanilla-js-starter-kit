@@ -1,23 +1,23 @@
-export const AppButtons = () => /* html */ `<div>
-    <div class="row">
-        <div class="col">
-            <button
-                role="appButtonIncrement"
-                class="calc-btn btn btn-outline-success btn-lg btn-block"
-                onclick="window.mapAllDispatch.incrementDecrement.increment()"
-            >
-                +
-            </button>
-        </div><!-- .col -->
-        <div class="col">
-            <button
-                role="appButtonDecrement"
-                class="calc-btn btn btn-outline-warning btn-lg btn-block"
-                onclick="window.mapAllDispatch.incrementDecrement.decrement()"
-            >
-                -
-            </button>
-        </div><!-- .col -->
+import { Button } from '../button/Button'
+
+export const AppButtons = () => /* html */ `<div class="row">
+        <!-- component like in React  -->
+        ${Button({
+            role: 'appButtonIncrement',
+            className: 'calc-btn btn btn-outline-success btn-lg btn-block',
+            event: 'window.mapAllDispatch.incrementDecrement.increment()',
+            nodeText: '+',
+        })}
+
+        <!-- component like in React  -->
+        ${Button({
+            role: 'appButtonDecrement',
+            className: 'calc-btn btn btn-outline-warning btn-lg btn-block',
+            event: 'window.mapAllDispatch.incrementDecrement.decrement()',
+            nodeText: '-',
+        })}
+
+        <!-- plain html -->
         <div class="col">
             <button
                 role="appButtonClear"
@@ -27,16 +27,4 @@ export const AppButtons = () => /* html */ `<div>
                 Clear
             </button>
         </div><!-- .col -->
-    </div><!-- .row -->
-
-    <div class="row">
-        <div class="col">
-            <span class="badge badge-info">
-                Try Keyboard:
-                <br />
-                +, -, Delete, Backspace
-            </span>
-        </div><!-- .col -->        
-    </div><!-- .row -->
-
 </div>`

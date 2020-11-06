@@ -13,7 +13,10 @@ store.subscribe(() => {
     App.render()
 })
 
-describe("App's common tests", () => {
+describe('App', () => {
+    it('initial div "root"', () => {
+        expect(screen.queryByTestId(/^mainRootDiv$/)).not.toBeNull()
+    })
     beforeEach(() => {
         // initial, must be here
         document.getElementById('root').innerHTML += ''
@@ -22,11 +25,8 @@ describe("App's common tests", () => {
         // app screen is clear
         expect(getNodeText(screen.getByRole(/^appMainScreen$/i))).toBe('0')
     })
-    it('initial div "root" is exist', () => {
-        screen.getByTestId(/^mainRootDiv$/)
-    })
-    it('-GitHub Corners- is exist', () => {
-        screen.getByRole(/^githubCorner$/i)
+    it('-GitHub Corners-', () => {
+        expect(screen.queryByRole(/^githubCorner$/i)).not.toBeNull()
     })
     it('increment is working', () => {
         // click +
@@ -47,5 +47,21 @@ describe("App's common tests", () => {
         fireEvent.click(screen.getByRole(/^appButtonDecrement$/i))
         // result
         expect(getNodeText(screen.getByRole(/^appMainScreen$/i))).toBe('-1')
+    })
+    it('infoBoard is working', () => {
+        // -infoBoard- not exist
+        expect(screen.queryByRole(/^infoBoard$/i)).toBeNull()
+        // click +
+        fireEvent.click(screen.getByRole(/^appButtonIncrement$/i))
+        // -infoBoard- exist
+        expect(screen.queryByRole(/^infoBoard$/i)).not.toBeNull()
+        // clear app's screen value
+        fireEvent.click(screen.getByRole(/^appButtonClear$/i))
+        // -infoBoard- not exist
+        expect(screen.queryByRole(/^infoBoard$/i)).toBeNull()
+        // click -
+        fireEvent.click(screen.getByRole(/^appButtonDecrement$/i))
+        // -infoBoard- exist
+        expect(screen.queryByRole(/^infoBoard$/i)).not.toBeNull()
     })
 })

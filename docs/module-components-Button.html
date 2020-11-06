@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8" />
-        <title>components-GithubCorner - Documentation</title>
+        <title>components-Button - Documentation</title>
 
         <script src="scripts/prettify/prettify.js"></script>
         <script src="scripts/prettify/lang-css.js"></script>
@@ -93,7 +93,7 @@
         </nav>
 
         <div id="main">
-            <h1 class="page-title">components-GithubCorner</h1>
+            <h1 class="page-title">components-Button</h1>
 
             <section>
                 <header></header>
@@ -103,9 +103,10 @@
 
                     <h3 class="subsection-title">Methods</h3>
 
-                    <h4 class="name" id="~GithubCorner">
-                        <span class="type-signature">(inner) </span
-                        >GithubCorner<span class="signature">(linkToRepo)</span
+                    <h4 class="name" id="~Button">
+                        <span class="type-signature">(inner) </span>Button<span
+                            class="signature"
+                            >(props)</span
                         ><span class="type-signature"> &rarr; {string}</span>
                     </h4>
 
@@ -114,12 +115,11 @@
                         <dd class="tag-source">
                             <ul class="dummy">
                                 <li>
-                                    <a
-                                        href="components_githubCorner_GithubCorner.js.html"
-                                        >components/githubCorner/GithubCorner.js</a
+                                    <a href="components_button_Button.js.html"
+                                        >components/button/Button.js</a
                                     >,
                                     <a
-                                        href="components_githubCorner_GithubCorner.js.html#line3"
+                                        href="components_button_Button.js.html#line3"
                                         >line 3</a
                                     >
                                 </li>
@@ -133,9 +133,13 @@
 
                     <h5>Example</h5>
 
-                    <pre
-                        class="prettyprint"
-                    ><code>${GithubCorner('https://github.com/')}</code></pre>
+                    <pre class="prettyprint"><code>${Button({
+            role: 'appButtonIncrement',
+            className: 'calc-btn btn btn-outline-success btn-lg btn-block',
+            fireEvent: 'ondblclick',
+            event: 'window.mapAllDispatch.incrementDecrement.increment()',
+            nodeText: '+',
+    })}</code></pre>
 
                     <h5>Parameters:</h5>
 
@@ -152,14 +156,110 @@
 
                         <tbody>
                             <tr>
-                                <td class="name"><code>linkToRepo</code></td>
+                                <td class="name"><code>props</code></td>
 
                                 <td class="type">
-                                    <span class="param-type">string</span>
+                                    <span class="param-type">Object</span>
                                 </td>
 
                                 <td class="description last">
-                                    link to github repository
+                                    <h6>Properties</h6>
+
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <th>Name</th>
+
+                                                <th>Type</th>
+
+                                                <th class="last">
+                                                    Description
+                                                </th>
+                                            </tr>
+                                        </thead>
+
+                                        <tbody>
+                                            <tr>
+                                                <td class="name">
+                                                    <code>role</code>
+                                                </td>
+
+                                                <td class="type">
+                                                    <span class="param-type"
+                                                        >string</span
+                                                    >
+                                                </td>
+
+                                                <td
+                                                    class="description last"
+                                                ></td>
+                                            </tr>
+
+                                            <tr>
+                                                <td class="name">
+                                                    <code>className</code>
+                                                </td>
+
+                                                <td class="type">
+                                                    <span class="param-type"
+                                                        >string</span
+                                                    >
+                                                </td>
+
+                                                <td
+                                                    class="description last"
+                                                ></td>
+                                            </tr>
+
+                                            <tr>
+                                                <td class="name">
+                                                    <code>fireEvent</code>
+                                                </td>
+
+                                                <td class="type">
+                                                    <span class="param-type"
+                                                        >string</span
+                                                    >
+                                                </td>
+
+                                                <td
+                                                    class="description last"
+                                                ></td>
+                                            </tr>
+
+                                            <tr>
+                                                <td class="name">
+                                                    <code>event</code>
+                                                </td>
+
+                                                <td class="type">
+                                                    <span class="param-type"
+                                                        >string</span
+                                                    >
+                                                </td>
+
+                                                <td
+                                                    class="description last"
+                                                ></td>
+                                            </tr>
+
+                                            <tr>
+                                                <td class="name">
+                                                    <code>nodeText</code>
+                                                </td>
+
+                                                <td class="type">
+                                                    <span class="param-type"
+                                                        >string</span
+                                                    >
+                                                </td>
+
+                                                <td
+                                                    class="description last"
+                                                ></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
                                 </td>
                             </tr>
                         </tbody>
@@ -168,7 +268,7 @@
                     <h5>Returns:</h5>
 
                     <div class="param-desc">
-                        template literal: octoCat svg + link to repo
+                        template literal: bootstrap .col + custom html button
                     </div>
 
                     <dl class="param-type">

@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8" />
-        <title>utils-keyboardEventListener - Documentation</title>
+        <title>components/button/Button.js - Documentation</title>
 
         <script src="scripts/prettify/prettify.js"></script>
         <script src="scripts/prettify/lang-css.js"></script>
@@ -93,74 +93,49 @@
         </nav>
 
         <div id="main">
-            <h1 class="page-title">utils-keyboardEventListener</h1>
+            <h1 class="page-title">components/button/Button.js</h1>
 
             <section>
-                <header></header>
-
                 <article>
-                    <div class="container-overview"></div>
-
-                    <h3 class="subsection-title">Methods</h3>
-
-                    <h4 class="name" id="~keyboardEventListener">
-                        <span class="type-signature">(inner) </span
-                        >keyboardEventListener<span class="signature">()</span
-                        ><span class="type-signature">
-                            &rarr; {document.addEventListener('keydown',
-                            listener)}</span
-                        >
-                    </h4>
-
-                    <dl class="details">
-                        <dt class="tag-source">Source:</dt>
-                        <dd class="tag-source">
-                            <ul class="dummy">
-                                <li>
-                                    <a
-                                        href="utils_keyboardEventListener.js.html"
-                                        >utils/keyboardEventListener.js</a
-                                    >,
-                                    <a
-                                        href="utils_keyboardEventListener.js.html#line3"
-                                        >line 3</a
-                                    >
-                                </li>
-                            </ul>
-                        </dd>
-                    </dl>
-
-                    <div class="description usertext">
-                        Function which returns keydown events handler, catching
-                        keyboard [+ - delete backspace]
-                    </div>
-
-                    <h5>Example</h5>
-
                     <pre
-                        class="prettyprint"
-                    ><code>// click on keyboard [+] ~> -increment-'
-// click on keyboard [-] ~> -decrement-'
-// click on keyboard [delete] ~> -clear all-'
-keyboardEventListener()</code></pre>
+                        class="prettyprint source linenums"
+                    ><code>/** @module components-Button */
 
-                    <h5>Returns:</h5>
-
-                    <div class="param-desc">
-                        EventListener for catching Keyboard and NumPad buttons:
-                        + - delete backspace; and ignoring all f-buttons on
-                        keyboard
-                    </div>
-
-                    <dl class="param-type">
-                        <dt>Type</dt>
-                        <dd>
-                            <span class="param-type"
-                                >document.addEventListener('keydown',
-                                listener)</span
-                            >
-                        </dd>
-                    </dl>
+/**
+ * Presentational component
+ * @function Button
+ * @param {Object} props
+ * @param {string} props.role
+ * @param {string} props.className
+ * @param {string} props.fireEvent
+ * @param {string} props.event
+ * @param {string} props.nodeText
+ * @returns {string} template literal: bootstrap .col + custom html button
+ * @example
+ * ${Button({
+            role: 'appButtonIncrement',
+            className: 'calc-btn btn btn-outline-success btn-lg btn-block',
+            fireEvent: 'ondblclick',
+            event: 'window.mapAllDispatch.incrementDecrement.increment()',
+            nodeText: '+',
+    })}
+ */
+export const Button = ({
+    role = '',
+    className = 'fooBar',
+    fireEvent = 'onclick',
+    event = 'window.alert()',
+    nodeText = 'testButton',
+}) => /* html */ `&lt;div class="col">
+    &lt;button
+        role="${role}"
+        class="${className}"
+        ${fireEvent}="${event}"
+    >
+        ${nodeText}
+    &lt;/button>
+&lt;/div> `
+</code></pre>
                 </article>
             </section>
         </div>
