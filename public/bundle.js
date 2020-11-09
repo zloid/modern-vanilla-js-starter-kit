@@ -2113,7 +2113,7 @@
                                                 Ge({
                                                     role: 'appButtonIncrement',
                                                     className:
-                                                        'calc-btn btn btn-outline-success btn-lg btn-block',
+                                                        'app-btn btn btn-outline-success btn-lg btn-block',
                                                     event:
                                                         'window.mapAllDispatch.incrementDecrement.increment()',
                                                     nodeText: '+',
@@ -2124,12 +2124,12 @@
                                                 Ge({
                                                     role: 'appButtonDecrement',
                                                     className:
-                                                        'calc-btn btn btn-outline-warning btn-lg btn-block',
+                                                        'app-btn btn btn-outline-warning btn-lg btn-block',
                                                     event:
                                                         'window.mapAllDispatch.incrementDecrement.decrement()',
                                                     nodeText: '-',
                                                 }),
-                                                '\n\n        \x3c!-- plain html --\x3e\n        <div class="col">\n            <button\n                role="appButtonClear"\n                class="calc-btn btn btn-outline-danger btn-lg btn-block"\n                onclick="window.mapAllDispatch.incrementDecrement.clearAll()"\n            >\n                Clear\n            </button>\n        </div>\x3c!-- .col --\x3e\n</div>'
+                                                '\n\n        \x3c!-- plain html --\x3e\n        <div class="col">\n            <button\n                role="appButtonClear"\n                class="app-btn btn btn-outline-danger btn-lg btn-block"\n                onclick="window.mapAllDispatch.incrementDecrement.clearAll()"\n            >\n                Clear\n            </button>\n        </div>\x3c!-- .col --\x3e\n</div>'
                                             ),
                                         ' \n    '
                                     )
