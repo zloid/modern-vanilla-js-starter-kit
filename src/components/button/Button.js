@@ -13,7 +13,7 @@
  * @example
  * ${Button({
             role: 'appButtonIncrement',
-            className: 'calc-btn btn btn-outline-success btn-lg btn-block',
+            className: 'app-btn btn btn-outline-success btn-lg btn-block',
             eventType: 'ondblclick',
             event: 'window.mapAllDispatch.incrementDecrement.increment()',
             nodeText: '+',

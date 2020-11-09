@@ -5,9 +5,9 @@
  * @function keyboardEventListener
  * @returns {document.addEventListener('keydown', listener)}  EventListener for catching Keyboard and NumPad buttons:  + - delete backspace; and ignoring all f-buttons on keyboard
  * @example
- * // click on keyboard [+] ~> -increment-'
- * // click on keyboard [-] ~> -decrement-'
- * // click on keyboard [delete] ~> -clear all-'
+ * // click on keyboard [+] ~> -increment-
+ * // click on keyboard [-] ~> -decrement-
+ * // click on keyboard [delete] ~> -clear all-
  * keyboardEventListener()
  */
 export const keyboardEventListener = () => {

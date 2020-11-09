@@ -1,6 +1,6 @@
 {
     "name": "modern-vanilla-js-starter-kit",
-    "version": "0.3.0",
+    "version": "0.3.2",
     "description": "starter_kit",
     "main": "index.js",
     "scripts": {
@@ -8,9 +8,10 @@
         "start": "webpack serve --mode development",
         "build": "webpack",
         "serve": "serve",
+        "clean:docs": "node ./scripts/rmrf.js ./docs",
         "jsdoc": "jsdoc -c jsdoc-config.json",
         "docmd": "jsdoc2md \"!(node_modules|__tests__)/**\" --template README_template.hbs --plugin @godaddy/dmd > README.md",
-        "docs": "npm run jsdoc && npm run docmd && npm run pretty",
+        "docs": "npm run clean:docs && npm run jsdoc && npm run docmd && npm run pretty",
         "pretty": "prettier --write ."
     },
     "repository": {
@@ -46,6 +47,7 @@
         "prettier": "^2.1.2",
         "purgecss": "^3.0.0",
         "purgecss-webpack-plugin": "^3.0.0",
+        "rimraf": "^3.0.2",
         "serve": "^11.3.2",
         "style-loader": "^2.0.0",
         "webpack": "^5.3.2",
