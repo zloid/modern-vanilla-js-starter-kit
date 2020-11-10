@@ -3,31 +3,34 @@
 # modern-vanilla-JS-starter-kit
 
 ## Target
-
-The creation of a small web SPA with a modern JS ecosystem around webpack. You can comfortably create a framework agnostic JS application, but (c) "Thinking in React" with reactivity based on the Redux-toolkit and Reef.js lib.
+ 
+To provide developers with a set of good tools to get started quickly developing of a small web SPA. You can comfortably create a framework agnostic JS application, but (c) "Thinking in React" with reactivity based on the Redux-toolkit and Reef.js lib.
+ 
 
 ## Features for Developers
 
--   Predictable Flux architecture
+-   This Starter Kit focused on creating predictable Flux architecture
+-   Focused on modern JS
+-   HTML-in-JS instead of JSX. Plain HTML in plain JS
+-   Bootstrap (without jquery and popper.js) for simple CSS
+-   Bootstrap's CSS is reducing with Auto-Purge, while build creating
 -   Separation of App logic and UI
 -   Components architecture, rely on predictable RTK style
 -   All RTK features: Redux Dev Tools, slices, immer, etc.
 -   Jest and @testing-library/dom for tests
 -   @babel for: es6 to es5 and correct work with jest & ESM modules
--   Husky: for hooks
--   Bootstrap (without jquery and popper.js) for simple CSS
--   CSS is Auto-Purge, while build creating
 -   Automatic generation of html documentation from JSDoc + docdash as a nice looking template for JSDoc
--   Automatic README.md generation from jsdoc
--   Flexibility. Feel free to change one library from this starter kit to another. For example you can change Redux-toolkit to vanilla Redux for reduce size of final bundle
-
+-   Automatic README.md generation from JSDoc
+-   Husky: for hooks
+-   Flexibility. Feel free to change one library from this starter kit to another. For example you can change Redux-toolkit to vanilla Redux for reduce size of final bundle. Feel free to experimenting.
+ 
 ## You can
 
 -   git clone [this_repo_url] && cd [repo_name] && npm i (install this repo on your machine)
 -   npm run test (for tests)
 -   npm run start (for run dev server)
--   npm run build (for creating public build, index.html autogenerate)
--   npm run docs (for create html docs for app by jsdoc and md-docs by jsdoc-to-markdown)
+-   npm run build (for creating public build, index.html is autogenerate)
+-   npm run docs (for create html docs for app by JSDoc and md-docs by jsdoc-to-markdown)
 -   npm run serve (for run app local server and www)
 -   use VSC + Extensions: "Comment tagged templates", "lit-html", for best expierence with js template literals
 
