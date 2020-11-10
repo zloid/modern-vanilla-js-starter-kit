@@ -1,6 +1,6 @@
 {
     "name": "modern-vanilla-js-starter-kit",
-    "version": "0.3.2",
+    "version": "0.3.5",
     "description": "starter_kit",
     "main": "index.js",
     "scripts": {
@@ -55,7 +55,7 @@
         "webpack-dev-server": "^3.11.0"
     },
     "engines": {
-        "node": "v12.19.0",
-        "npm": "v6.14.8"
+        "node": ">=12.19.0",
+        "npm": ">=6.14.8"
     }
 }

@@ -4,11 +4,11 @@
  * Presentational component
  * @function Button
  * @param {Object} props
- * @param {string} props.role - HTML role attribute
- * @param {string} props.className - HTML class attribute
- * @param {string} props.eventType - HTML attribute named on-eventtype, specify an on-event handler for a particular event (such as click) 
- * @param {string} props.event - Event target
- * @param {string} props.nodeText - HTMLElement.innerText
+ * @param {string=} props.role - HTML role attribute
+ * @param {string=} props.className - HTML class attribute
+ * @param {string=} props.eventType - HTML attribute named on-eventtype, specify an on-event handler for a particular event (such as click) 
+ * @param {string=} props.event - Event target
+ * @param {string=} props.nodeText - HTMLElement.innerText
  * @returns {string} template literal: bootstrap .col + custom html button
  * @example
  * ${Button({
