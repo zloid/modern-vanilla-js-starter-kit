@@ -6,12 +6,11 @@
  
 To provide developers with a set of good tools to get started quickly developing of a small web SPA. You can comfortably create a framework agnostic JS application, but (c) "Thinking in React" with reactivity based on the Redux-toolkit and Reef.js lib.
  
-
 ## Features for Developers
 
--   This Starter Kit focused on creating predictable Flux architecture
+-   This Starter Kit focused on creating App based on predictable Flux architecture
 -   Focused on modern JS
--   HTML-in-JS instead of JSX. Plain HTML in plain JS
+-   HTML-in-JS instead of JSX (plain HTML in plain JS)
 -   Bootstrap (without jquery and popper.js) for simple CSS
 -   Bootstrap's CSS is reducing with Auto-Purge, while build creating
 -   Separation of App logic and UI

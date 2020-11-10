@@ -9,7 +9,7 @@ const App = new Reef('#root', {
         ${AppUi()}
 
         ${GithubCorner(
-            'https://github.com/zloid/modern-vanilla-JS-starter-kit'
+            'https://github.com/zloid/modern-vanilla-js-starter-kit'
         )}
 
     </div>`,
