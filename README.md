@@ -1,6 +1,6 @@
 <!-- Information about the project to be edited by hand -->
 
-# modern-vanilla-JS-starter-kit
+# modern vanilla JS starterKit
 
 ## Target
  
@@ -10,7 +10,7 @@ To provide developers with a set of good tools to get started quickly developing
 
 -   This Starter Kit focused on creating App based on predictable Flux architecture
 -   Focused on modern JS
--   HTML-in-JS instead of JSX (plain HTML in plain JS)
+-   HTML-in-JS (plain HTML in plain JS) instead of JSX
 -   Bootstrap (without jquery and popper.js) for simple CSS
 -   Bootstrap's CSS is reducing with Auto-Purge, while build creating
 -   Separation of App logic and UI
@@ -31,10 +31,10 @@ To provide developers with a set of good tools to get started quickly developing
 -   npm run build (for creating public build, index.html is autogenerate)
 -   npm run docs (for create html docs for app by JSDoc and md-docs by jsdoc-to-markdown)
 -   npm run serve (for run app local server and www)
--   use VSC + Extensions: "Comment tagged templates", "lit-html", for best expierence with js template literals
+-   use VSC + Extensions: "Comment tagged templates", "lit-html", for best expierence with HTML-in-JS template literals
 
 
-<!-- You do not need to touch the settings below. This is for automatic README.md generation -->
+<!-- You do not need to touch the code below. This is automatic README.md generation -->
 <!-- check out https://github.com/jsdoc2md for learn more -->
 
 ## API Reference
@@ -62,11 +62,11 @@ Presentational component
 | Param | Type | Description |
 | --- | --- | --- |
 | props | `Object` |  |
-| props.role | `string` | HTML role attribute |
-| props.className | `string` | HTML class attribute |
-| props.eventType | `string` | HTML attribute named on-eventtype, specify an on-event handler for a particular event (such as click) |
-| props.event | `string` | Event target |
-| props.nodeText | `string` | HTMLElement.innerText |
+| \[props.role\] | `string` | HTML role attribute |
+| \[props.className\] | `string` | HTML class attribute |
+| \[props.eventType\] | `string` | HTML attribute named on-eventtype, specify an on-event handler for a particular event (such as click) |
+| \[props.event\] | `string` | Event target |
+| \[props.nodeText\] | `string` | HTMLElement.innerText |
 
 **Example**  
 ```js

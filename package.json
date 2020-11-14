@@ -1,11 +1,12 @@
 {
     "name": "modern-vanilla-js-starter-kit",
-    "version": "0.3.5",
+    "version": "0.3.8",
     "description": "starter_kit",
     "main": "index.js",
     "scripts": {
         "test": "jest",
         "start": "webpack serve --mode development",
+        "lint": "eslint \"**/*.js\"",
         "build": "webpack",
         "serve": "serve",
         "clean:docs": "node ./scripts/rmrf.js ./docs",
@@ -16,7 +17,7 @@
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/zloid/modern-vanilla-JS-starter-kit.git"
+        "url": "https://github.com/zloid/modern-vanilla-js-starter-kit.git"
     },
     "author": "idolz",
     "license": "MIT",
@@ -37,6 +38,7 @@
         "clean-webpack-plugin": "^3.0.0",
         "css-loader": "^5.0.0",
         "docdash": "^1.2.0",
+        "eslint": "^7.13.0",
         "html-webpack-plugin": "^4.5.0",
         "husky": "^4.3.0",
         "jest": "^26.6.1",

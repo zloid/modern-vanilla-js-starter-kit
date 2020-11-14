@@ -32,4 +32,4 @@ class Connect {
 const mapAllDispatch = new Connect()
 Object.freeze(mapAllDispatch)
 
-export default window.mapAllDispatch = mapAllDispatch
+export default mapAllDispatch

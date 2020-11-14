@@ -1,17 +1,17 @@
 import { screen, fireEvent, getNodeText } from '@testing-library/dom'
-// -mapAllDispatch- must be here, there all dispatch actions
 import mapAllDispatch from './../src/utils/mapAllDispatch'
 import App from './../src/app/App'
 import store from './../src/app/store'
+
+// -mapAllDispatch- must be here, there all dispatch actions
+window.mapAllDispatch = mapAllDispatch
 
 // creating DOM div #root
 document.body.innerHTML = '<div id="root" data-testid="mainRootDiv"></div>'
 // first render App to #root
 App.render()
 // render each time when dispatch Redux actions
-store.subscribe(() => {
-    App.render()
-})
+store.subscribe(() => App.render())
 
 describe('App', () => {
     it('initial div "root"', () => {
