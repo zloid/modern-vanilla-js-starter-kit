@@ -1,12 +1,12 @@
 {
     "name": "modern-vanilla-js-starter-kit",
-    "version": "0.3.8",
+    "version": "0.3.10",
     "description": "starter_kit",
     "main": "index.js",
     "scripts": {
         "test": "jest",
         "start": "webpack serve --mode development",
-        "lint": "eslint \"**/*.js\"",
+        "lint": "eslint src --ext .js",
         "build": "webpack",
         "serve": "serve",
         "clean:docs": "node ./scripts/rmrf.js ./docs",

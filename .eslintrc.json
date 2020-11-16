@@ -8,7 +8,5 @@
         "ecmaVersion": 12,
         "sourceType": "module"
     },
-    "ignorePatterns": ["node_modules/*", "*.test.js", "webpack.config.js", "rmrf.js"],
-    "rules": {
-    }
+    "rules": {}
 }
