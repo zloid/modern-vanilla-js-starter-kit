@@ -9,7 +9,7 @@
  * ${GithubCorner('https://github.com/')}
  */
 export const GithubCorner = (
-    linkToRepo = 'https://github.com/zloid/modern-vanilla-JS-starter-kit'
+    linkToRepo = 'https://github.com/zloid/modern-vanilla-js-starter-kit'
 ) => /* html */ `<div>    
         <!-- github-corner svg logo-link -->        
         <a

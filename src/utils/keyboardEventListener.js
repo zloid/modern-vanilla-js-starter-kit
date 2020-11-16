@@ -22,7 +22,7 @@ export const keyboardEventListener = () => {
                 case /\+/.test(event.key):
                     window.mapAllDispatch.incrementDecrement.increment()
                     break
-                case /\-/.test(event.key):
+                case /-/.test(event.key):
                     window.mapAllDispatch.incrementDecrement.decrement()
                     break
                 case /delete|backspace/i.test(event.key):
