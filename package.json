@@ -1,6 +1,6 @@
 {
     "name": "modern-vanilla-js-starter-kit",
-    "version": "0.3.10",
+    "version": "0.3.12",
     "description": "starter_kit",
     "main": "index.js",
     "scripts": {

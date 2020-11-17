@@ -1,7 +1,7 @@
 import Reef from 'reefjs'
 // presentational components
-import { AppUi } from '../components/appUi/AppUi'
-import { GithubCorner } from '../components/githubCorner/GithubCorner'
+import { AppUi } from '../components/AppUi/AppUi'
+import { GithubCorner } from '../components/GithubCorner/GithubCorner'
 
 const App = new Reef('#root', {
     template: () => /* html */ `<div>
