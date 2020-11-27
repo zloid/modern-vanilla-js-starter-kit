@@ -1,11 +1,14 @@
 import { Button } from '../Button/Button'
+// import { clearAll, increment } from '../../features/incrementDecrement/incrementDecrementSlice';
+// import store from '../../app/store';
+// import mapAllDispatch from '../../utils/mapAllDispatch';
 
 export const AppButtons = () => /* html */ `<div class="row">
         <!-- component like in React  -->
         ${Button({
             role: 'appButtonIncrement',
             className: 'app-btn btn btn-outline-success btn-lg btn-block',
-            event: 'window.mapAllDispatch.incrementDecrement.increment()',
+            event: 'globalThis.mapAllDispatch.incrementDecrement.increment()',
             nodeText: '+',
         })}
 
@@ -13,7 +16,7 @@ export const AppButtons = () => /* html */ `<div class="row">
         ${Button({
             role: 'appButtonDecrement',
             className: 'app-btn btn btn-outline-warning btn-lg btn-block',
-            event: 'window.mapAllDispatch.incrementDecrement.decrement()',
+            event: 'globalThis.mapAllDispatch.incrementDecrement.decrement()',
             nodeText: '-',
         })}
 
@@ -22,7 +25,7 @@ export const AppButtons = () => /* html */ `<div class="row">
             <button
                 role="appButtonClear"
                 class="app-btn btn btn-outline-danger btn-lg btn-block"
-                onclick="window.mapAllDispatch.incrementDecrement.clearAll()"
+                onclick="globalThis.mapAllDispatch.incrementDecrement.clearAll()"
             >
                 Clear
             </button>

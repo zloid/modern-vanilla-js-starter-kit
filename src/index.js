@@ -10,7 +10,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import './app/app.css'
 
 // -mapAllDispatch- must be here, there all dispatch actions
-window.mapAllDispatch = mapAllDispatch
+globalThis.mapAllDispatch = mapAllDispatch
 
 // creating DOM element: div#root
 document.body.innerHTML = '<div id="root"></div>'

@@ -28,11 +28,14 @@ class Connect {
             decrement: () => store.dispatch(decrement()),
             clearAll: () => store.dispatch(clearAll()),
         }
+        /*
+        todo
         // reference on the instance, we can check whether or not we’ve already instantiated a Connect, and if we have, we won’t create a new one.
         if (!Connect.mapAllDispatch) {
             Connect.mapAllDispatch = this
         }
         return Connect.mapAllDispatch
+        */
     }
 }
 // Singleton

@@ -1,12 +1,12 @@
 {
     "name": "modern-vanilla-js-starter-kit",
-    "version": "0.3.14",
+    "version": "0.3.17",
     "description": "starter_kit",
     "main": "index.js",
     "scripts": {
         "test": "jest",
         "start": "webpack serve --mode development",
-        "checkjs": "tsc --allowJs --checkJs --noEmit --target es5 src/*.js",
+        "checkjs": "tsc --allowJs --checkJs --noEmit --moduleResolution node --target es6 src/*.js",
         "lint": "eslint src --ext .js && npm run checkjs",
         "build": "webpack",
         "serve": "serve",
