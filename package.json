@@ -1,12 +1,13 @@
 {
     "name": "modern-vanilla-js-starter-kit",
-    "version": "0.3.12",
+    "version": "0.3.17",
     "description": "starter_kit",
     "main": "index.js",
     "scripts": {
         "test": "jest",
         "start": "webpack serve --mode development",
-        "lint": "eslint src --ext .js",
+        "checkjs": "tsc --allowJs --checkJs --noEmit --moduleResolution node --target es6 src/*.js",
+        "lint": "eslint src --ext .js && npm run checkjs",
         "build": "webpack",
         "serve": "serve",
         "clean:docs": "node ./scripts/rmrf.js ./docs",
@@ -52,6 +53,7 @@
         "rimraf": "^3.0.2",
         "serve": "^11.3.2",
         "style-loader": "^2.0.0",
+        "typescript": "^4.0.5",
         "webpack": "^5.3.2",
         "webpack-cli": "^4.1.0",
         "webpack-dev-server": "^3.11.0"

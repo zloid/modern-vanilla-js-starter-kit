@@ -4,7 +4,7 @@ import App from './../src/app/App'
 import store from './../src/app/store'
 
 // -mapAllDispatch- must be here, there all dispatch actions
-window.mapAllDispatch = mapAllDispatch
+globalThis.mapAllDispatch = mapAllDispatch
 
 // creating DOM div #root
 document.body.innerHTML = '<div id="root" data-testid="mainRootDiv"></div>'

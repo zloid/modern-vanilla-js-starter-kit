@@ -15,7 +15,7 @@
             role: 'appButtonIncrement',
             className: 'app-btn btn btn-outline-success btn-lg btn-block',
             eventType: 'ondblclick',
-            event: 'window.mapAllDispatch.incrementDecrement.increment()',
+            event: 'globalThis.mapAllDispatch.incrementDecrement.increment()',
             nodeText: '+',
 })}
  */
@@ -23,7 +23,7 @@ export const Button = ({
     role = '',
     className = 'fooBar',
     eventType = 'onclick',
-    event = 'window.alert()',
+    event = 'globalThis.alert()',
     nodeText = 'testButton',
 }) => /* html */ `<div class="col">
     <button

@@ -1,9 +1,10 @@
 /** @module utils-keyboardEventListener */
 
 /**
- * Function which returns keydown events handler, catching keyboard [+ - delete backspace]
+ * Function which define EventListener for catching Keyboard and NumPad buttons:  + - delete backspace; and ignoring all f-buttons on keyboard
+ * 
  * @function keyboardEventListener
- * @returns {document.addEventListener('keydown', listener)}  EventListener for catching Keyboard and NumPad buttons:  + - delete backspace; and ignoring all f-buttons on keyboard
+ * @returns {string} an empty string
  * @example
  * // click on keyboard [+] ~> -increment-
  * // click on keyboard [-] ~> -decrement-
@@ -20,13 +21,13 @@ export const keyboardEventListener = () => {
 
             switch (true) {
                 case /\+/.test(event.key):
-                    window.mapAllDispatch.incrementDecrement.increment()
+                    globalThis.mapAllDispatch.incrementDecrement.increment()
                     break
                 case /-/.test(event.key):
-                    window.mapAllDispatch.incrementDecrement.decrement()
+                    globalThis.mapAllDispatch.incrementDecrement.decrement()
                     break
                 case /delete|backspace/i.test(event.key):
-                    window.mapAllDispatch.incrementDecrement.clearAll()
+                    globalThis.mapAllDispatch.incrementDecrement.clearAll()
                     break
                 default:
                     return // Quit when this doesn't handle the key event.

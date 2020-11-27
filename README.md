@@ -10,6 +10,7 @@ To provide developers with a set of good tools to get started quickly developing
 
 -   This Starter Kit focused on creating App based on predictable Flux architecture
 -   Focused on modern JS
+-   Used optional type checking by JSDoc + VSCode + Typescript (tsc)
 -   HTML-in-JS (plain HTML in plain JS) instead of JSX
 -   Bootstrap (without jquery and popper.js) for simple CSS
 -   Bootstrap's CSS is reducing with Auto-Purge, while build creating
@@ -27,7 +28,7 @@ To provide developers with a set of good tools to get started quickly developing
 
 -   git clone [this_repo_url] && cd [repo_name] && npm i (install this repo on your machine)
 -   npm run test (for tests)
--   npm run lint (for analysis code in /src by ESLint)
+-   npm run lint (for analysis code in /src by ESLint + type checking by JSDoc + VSCode + tsc)
 -   npm run start (for run dev server)
 -   npm run build (for creating public build, index.html is autogenerate)
 -   npm run docs (for create html docs for app by JSDoc and md-docs by jsdoc-to-markdown)
@@ -75,7 +76,7 @@ ${Button({
             role: 'appButtonIncrement',
             className: 'app-btn btn btn-outline-success btn-lg btn-block',
             eventType: 'ondblclick',
-            event: 'window.mapAllDispatch.incrementDecrement.increment()',
+            event: 'globalThis.mapAllDispatch.incrementDecrement.increment()',
             nodeText: '+',
 })}
 ```
@@ -107,7 +108,6 @@ ${GithubCorner('https://github.com/')}
 Return eventListener -DOMContentLoaded- for window obj. The DOMContentLoaded event fires when the initial HTML document has been completely loaded and parsed, without waiting for stylesheets, images, and subframes to finish loading.
 
 **Kind**: inner method of [`utils-DOMDidMount`]  
-**Returns**: `EventListener` - EventListener which call all special scripts after DOMDidMount  
 **Example**  
 ```js
 // keyboardEventListener()
@@ -119,10 +119,10 @@ DOMDidMount()
 
 ### utils-keyboardEventListener~keyboardEventListener()
 
-Function which returns keydown events handler, catching keyboard [+ - delete backspace]
+Function which define EventListener for catching Keyboard and NumPad buttons:  + - delete backspace; and ignoring all f-buttons on keyboard
 
-**Kind**: inner method of [`utils-keyboardEventListener`][1]  
-**Returns**: `document.addEventListener('keydown', listener)` - EventListener for catching Keyboard and NumPad buttons:  + - delete backspace; and ignoring all f-buttons on keyboard  
+**Kind**: inner method of [`utils-keyboardEventListener`]  
+**Returns**: `string` - an empty string  
 **Example**  
 ```js
 // click on keyboard [+] ~> -increment-
@@ -150,5 +150,5 @@ library for compose RTK actions
 [`components-Button`]:#components-button
 [`components-GithubCorner`]:#components-githubcorner
 [`utils-DOMDidMount`]:#utils-domdidmount
-[1]:#utils-keyboardeventlistener
+[`utils-keyboardEventListener`]:#utils-keyboardeventlistener
 [`utils-mapAllDispatch`]:#utils-mapalldispatch
