@@ -15,14 +15,14 @@ module.exports = {
     entry: './src/index.js',
     output: {
         filename: 'bundle.js',
-        path: path.join(__dirname, 'public'),
+        path: path.join(__dirname, 'build'),
     },
 
     module: {
         rules: [
             {
                 test: /\.m?js$/i,
-                exclude: /(node_modules|bower_components)/,
+                exclude: /node_modules/,
                 use: {
                     loader: 'babel-loader',
                     options: { presets: ['@babel/preset-env'] },
@@ -43,7 +43,7 @@ module.exports = {
         }),
         new CleanWebpackPlugin(),
         new HtmlWebpackPlugin({
-            title: 'modern JS Single Page Application',
+            template: './public/index.html',
         }),
     ],
 }

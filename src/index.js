@@ -12,9 +12,6 @@ import './app/app.css'
 // -mapAllDispatch- must be here, there all dispatch actions
 globalThis.mapAllDispatch = mapAllDispatch
 
-// creating DOM element: div#root
-document.body.innerHTML = '<div id="root"></div>'
-
 // first render Reef's App to #root
 App.render()
 // adding keyboardEventListener()
