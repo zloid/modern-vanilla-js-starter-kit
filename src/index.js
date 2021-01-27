@@ -7,15 +7,16 @@ import { DOMDidMount } from './utils/DOMDidMount'
 import store from './app/store'
 // styles for App
 import 'bootstrap/dist/css/bootstrap.min.css'
+import './app/body.css'
 import './app/app.css'
 
 // -mapAllDispatch- must be here, there all dispatch actions
 globalThis.mapAllDispatch = mapAllDispatch
 
 // first render Reef's App to #root
-App.render()
+App('#root').render()
 // adding keyboardEventListener()
 DOMDidMount()
 
 // to fire render each time when dispatch redux actions
-store.subscribe(() => App.render())
+store.subscribe(() => App('#root').render())

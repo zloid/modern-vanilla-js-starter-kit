@@ -9,9 +9,9 @@ globalThis.mapAllDispatch = mapAllDispatch
 // creating DOM div #root
 document.body.innerHTML = '<div id="root" data-testid="mainRootDiv"></div>'
 // first render App to #root
-App.render()
+App('#root').render()
 // render each time when dispatch Redux actions
-store.subscribe(() => App.render())
+store.subscribe(() => App('#root').render())
 
 describe('App', () => {
     it('initial div "root"', () => {

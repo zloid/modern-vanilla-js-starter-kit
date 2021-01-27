@@ -10,10 +10,10 @@ globalThis.mapAllDispatch = mapAllDispatch
 // creating DOM div #root
 document.body.innerHTML = '<div id="root" data-testid="mainRootDiv"></div>'
 // first render App to #root
-App.render()
+App('#root').render()
 keyboardEventListener()
 // render each time when dispatch Redux actions
-store.subscribe(() => App.render())
+store.subscribe(() => App('#root').render())
 
 describe("App's common tests", () => {
     beforeEach(() => {
