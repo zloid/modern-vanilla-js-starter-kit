@@ -1,7 +1,4 @@
 import { Button } from '../Button/Button'
-// import { clearAll, increment } from '../../features/incrementDecrement/incrementDecrementSlice';
-// import store from '../../app/store';
-// import mapAllDispatch from '../../utils/mapAllDispatch';
 
 export const AppButtons = () => /* html */ `<div class="row">
         <!-- component like in React  -->

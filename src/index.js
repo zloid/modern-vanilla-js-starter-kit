@@ -11,7 +11,7 @@ import './app/body.css'
 import './app/app.css'
 
 // -mapAllDispatch- must be here, there all dispatch actions
-globalThis.mapAllDispatch = mapAllDispatch
+!globalThis.mapAllDispatch && (globalThis.mapAllDispatch = mapAllDispatch)
 
 // first render Reef's App to #root
 App('#root').render()
